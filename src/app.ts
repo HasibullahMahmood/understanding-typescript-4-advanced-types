@@ -53,3 +53,12 @@ moveAnimal({ type: 'horse', runningSpeed: 1000 });
 const userInput = <HTMLInputElement>document.getElementById('user-input');
 
 userInput.value = 'Some input';
+
+interface ErrorsContainer {
+	[key: string]: string;
+}
+
+const myError: ErrorsContainer = {
+	email: 'Please enter a valid email!',
+	username: 'username must start with a number!',
+};
