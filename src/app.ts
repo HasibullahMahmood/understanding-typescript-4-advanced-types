@@ -62,3 +62,14 @@ const myError: ErrorsContainer = {
 	email: 'Please enter a valid email!',
 	username: 'username must start with a number!',
 };
+
+type Combinable = string | number;
+function add(a: number, b: number): number; // function overloads
+function add(a: Combinable, b: Combinable) {
+	if (typeof a === 'string' || typeof b === 'string') {
+		return a.toString() + b.toString();
+	}
+	return a + b;
+}
+
+const result = add(5, 10);
