@@ -73,3 +73,7 @@ function add(a: Combinable, b: Combinable) {
 }
 
 const result = add(5, 10);
+
+const data = null;
+// ?? means: if data is undefined or null then default otherwise data
+console.log(data ?? 'DEFAULT');
